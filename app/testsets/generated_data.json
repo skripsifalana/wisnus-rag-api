@@ -1,0 +1,365 @@
+[
+  {
+    "user_input": "Apa definisi Wisatawan Nusantara menurut pedoman survei ini?",
+    "ground_truth": "Wisatawan Nusantara adalah penduduk Indonesia yang melakukan perjalanan di wilayah Indonesia selama kurang dari 12 bulan, bukan untuk bekerja atau sekolah rutin, dengan tujuan berwisata ke objek wisata atau mengunjungi kabupaten/kota lain minimal 6 jam.",
+    "page_references": [
+      48,
+      49
+    ],
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'perjalanan wisata' dalam survei ini?",
+    "ground_truth": "Perjalanan sukarela dari tempat tinggal biasa ke luar lingkungan sehari-hari di wilayah Indonesia selama kurang dari 12 bulan, dengan tujuan rekreasi, kunjungan keluarga, atau kegiatan non-rutin lainnya.",
+    "page_references": 48,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria objek wisata (ODTW) menurut UU No. 9 Tahun 2009?",
+    "ground_truth": "Segala sesuatu yang memiliki keunikan, keindahan, dan nilai berupa kekayaan alam, budaya, atau hasil buatan manusia yang menjadi tujuan kunjungan wisatawan.",
+    "page_references": 48,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam kategori 'akomodasi komersial'?",
+    "ground_truth": "Hotel (bintang/nonbintang), apartemen hotel, pondok wisata, villa, dan akomodasi berbayar lainnya selain rumah keluarga/teman.",
+    "page_references": 78,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'kegiatan rutin' yang dikecualikan dalam perjalanan wisata?",
+    "ground_truth": "Kegiatan bekerja atau sekolah yang dilakukan secara reguler ke lokasi yang sama minimal 4 kali dalam 6 bulan.",
+    "page_references": 48,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'pengeluaran akomodasi' dalam survei?",
+    "ground_truth": "Biaya menginap di hotel, penginapan komersial, atau tempat berbayar lainnya selama perjalanan wisata.",
+    "page_references": 83,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam kategori 'moda angkutan darat'?",
+    "ground_truth": "Angkutan umum/bus, travel, kendaraan pribadi, sewa kendaraan, dan angkutan darat tidak bermotor (sepeda/becak).",
+    "page_references": 79,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'cenderamata' dalam kategori pengeluaran?",
+    "ground_truth": "Pembelian barang sebagai kenang-kenangan seperti kerajinan tangan, patung, atau oleh-oleh khas daerah tujuan.",
+    "page_references": 85,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'kegiatan MICE' dalam wisata?",
+    "ground_truth": "Pertemuan, insentif, konferensi, dan pameran (Meeting, Incentive, Conference, Exhibition) yang menjadi tujuan perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria 'rumah tangga biasa' dalam survei ini?",
+    "ground_truth": "Sekelompok orang yang tinggal bersama, mengurus kebutuhan sehari-hari dari satu dapur, termasuk pembantu yang tinggal dan makan bersama.",
+    "page_references": 42,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'wisata kesehatan'?",
+    "ground_truth": "Perjalanan untuk tujuan pengobatan, terapi kesehatan, atau perawatan medis di fasilitas kesehatan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'pengeluaran transportasi' dalam survei?",
+    "ground_truth": "Biaya perjalanan menggunakan pesawat, kereta api, kapal, angkutan darat, atau moda transportasi lainnya selama wisata.",
+    "page_references": 83,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam 'wisata sejarah/religi'?",
+    "ground_truth": "Kunjungan ke situs warisan budaya, museum, tempat suci, atau lokasi bernilai sejarah/keagamaan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'kepala rumah tangga' dalam survei?",
+    "ground_truth": "Anggota rumah tangga yang bertanggung jawab atas pemenuhan kebutuhan sehari-hari atau yang ditunjuk/dianggap sebagai kepala.",
+    "page_references": 44,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'wisata kuliner'?",
+    "ground_truth": "Kegiatan mencicipi makanan khas daerah, mengikuti jamuan makan, atau eksplorasi kuliner selama perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria 'anggota rumah tangga' dalam survei?",
+    "ground_truth": "Orang yang biasanya tinggal bersama dan makan dari satu dapur, termasuk bayi, pembantu rumah tangga, dan tamu yang tinggal ≥6 bulan.",
+    "page_references": 46,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam 'pengeluaran hiburan'?",
+    "ground_truth": "Biaya tiket masuk objek wisata, pertunjukan seni, atau aktivitas rekreasi berbayar selama perjalanan.",
+    "page_references": 85,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'wisata petualangan'?",
+    "ground_truth": "Kegiatan seperti hiking, rafting, diving, atau aktivitas outdoor ekstrem lainnya selama perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'rumah tangga khusus'?",
+    "ground_truth": "Kelompok yang tinggal di asrama, lembaga pemasyarakatan, atau indekos dengan ≥10 orang yang bukan keluarga inti.",
+    "page_references": 42,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'paket perjalanan' dalam pengeluaran?",
+    "ground_truth": "Biaya yang dibayarkan ke biro perjalanan untuk paket wisata yang mencakup transportasi, akomodasi, dan fasilitas lainnya.",
+    "page_references": 84,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam 'wisata kota & pedesaan'?",
+    "ground_truth": "Kunjungan ke pasar tradisional, desa adat, atau eksplorasi kehidupan perkotaan/pedesaan selama perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'pengeluaran kesehatan' dalam survei?",
+    "ground_truth": "Biaya berobat, konsultasi medis, atau perawatan kesehatan selama perjalanan wisata.",
+    "page_references": 86,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'dark tourism'?",
+    "ground_truth": "Wisata ke situs-situs terkait kematian atau tragedi sejarah seperti bekas medan perang atau lokasi bencana.",
+    "page_references": 82,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria 'kegiatan wisata bahari'?",
+    "ground_truth": "Aktivitas seperti snorkeling, sailing, atau memancing di laut selama perjalanan wisata.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'pengeluaran bahan bakar'?",
+    "ground_truth": "Biaya bahan bakar kendaraan pribadi yang digunakan selama perjalanan wisata.",
+    "page_references": 84,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam 'wisata olahraga'?",
+    "ground_truth": "Partisipasi dalam event olahraga, menonton pertandingan, atau latihan olahraga selama perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'pengeluaran seminar/pertemuan'?",
+    "ground_truth": "Biaya pendaftaran atau partisipasi dalam konferensi, seminar, atau pertemuan bisnis selama perjalanan.",
+    "page_references": 84,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan 'wisata ekologi (eco-tourism)'?",
+    "ground_truth": "Kunjungan ke kawasan konservasi alam atau partisipasi dalam kegiatan pelestarian lingkungan selama perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa definisi 'pengeluaran belanja' non-cenderamata?",
+    "ground_truth": "Pembelian barang kebutuhan pribadi seperti pakaian, elektronik, atau kebutuhan sehari-hari selama perjalanan.",
+    "page_references": 86,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam 'wisata seni & budaya'?",
+    "ground_truth": "Menonton pertunjukan tradisional, mengunjungi galeri seni, atau partisipasi dalam festival budaya selama perjalanan.",
+    "page_references": 81,
+    "type": "single_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana konsep 'lingkungan sehari-hari' dalam definisi wisatawan nusantara mempengaruhi cakupan data yang dikumpulkan?",
+    "ground_truth": "Konsep ini membatasi pencatatan perjalanan hanya pada aktivitas di luar rutinitas normal, sehingga mengesampingkan perjalanan kerja/sekolah reguler dan fokus pada mobilitas yang benar-benar bersifat wisata.",
+    "page_references": "48-49, 50",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa klasifikasi objek wisata alam-budaya-buatan penting dalam analisis pola perjalanan?",
+    "ground_truth": "Klasifikasi ini membantu mengidentifikasi preferensi wisatawan, distribusi kunjungan, dan potensi pengembangan sektor pariwisata berbasis karakteristik destinasi.",
+    "page_references": "135-141",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana konsep 'lama tinggal minimal 6 jam' merefleksikan kualitas data pengeluaran wisata?",
+    "ground_truth": "Durasi ini menjamin tercatatnya pengeluaran riil untuk akomodasi/konsumsi, menghindari distorsi data dari kunjungan singkat yang tidak melibatkan transaksi ekonomi signifikan.",
+    "page_references": "48, 83",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa pembedaan antara 'cenderamata' dan 'belanja biasa' diperlukan dalam kategorisasi pengeluaran?",
+    "ground_truth": "Pembedaan ini membantu mengukur kontribusi ekonomi sektor kerajinan lokal dan membedakan antara pengeluaran konsumtif dengan pengeluaran bernilai budaya.",
+    "page_references": "85-86",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana definisi 'kegiatan rutin' mempengaruhi validitas data mobilitas penduduk?",
+    "ground_truth": "Pengecualian ini memastikan data fokus pada pergerakan wisata murni, bukan mobilitas pekerja/karyawan yang bisa mengaburkan analisis pola konsumsi pariwisata.",
+    "page_references": "48, 50",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa konsep 'pengeluaran kesehatan' dimasukkan dalam kategori wisata?",
+    "ground_truth": "Ini merefleksikan perkembangan wisata medis dan kebutuhan pemetaan potensi ekonomi dari layanan kesehatan yang terkait dengan aktivitas perjalanan.",
+    "page_references": "81, 86",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana integrasi konsep 'wisata berkelanjutan' tercermin dalam klasifikasi aktivitas?",
+    "ground_truth": "Terlihat melalui kategori eco-tourism dan aktivitas konservasi yang mendukung analisis dampak lingkungan dari aktivitas wisata.",
+    "page_references": "81, 135",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa pembedaan akomodasi komersial dan non-komersial penting bagi kebijakan pariwisata?",
+    "ground_truth": "Memberikan dasar untuk evaluasi distribusi manfaat ekonomi sektor akomodasi dan efektivitas program homestay berbasis masyarakat.",
+    "page_references": "78, 135",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana konsep 'perjalanan terakhir' meningkatkan akurasi recall responden?",
+    "ground_truth": "Membatasi memori pada pengalaman terkini mengurangi bias laporan dan meningkatkan ketepatan data pengeluaran/aktivitas.",
+    "page_references": "75, 83",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa definisi 'rumah tangga khusus' mempengaruhi metodologi pengumpulan data?",
+    "ground_truth": "Pengecualian kelompok ini memastikan fokus pada unit keluarga inti yang memiliki pola konsumsi dan mobilitas lebih terprediksi.",
+    "page_references": "42, 46",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana klasifikasi moda transportasi merefleksikan infrastruktur pariwisata suatu daerah?",
+    "ground_truth": "Distribusi penggunaan moda transportasi mengindikasikan tingkat aksesibilitas dan konektivitas destinasi wisata.",
+    "page_references": "79-80",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa konsep 'wisata kota & pedesaan' penting dalam analisis segmentasi pasar?",
+    "ground_truth": "Membedakan pola konsumsi dan preferensi wisatawan urban-rural untuk pengembangan paket wisata yang terarah.",
+    "page_references": "81, 139",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana definisi 'anggota rumah tangga' mempengaruhi cakupan data demografi?",
+    "ground_truth": "Inklusi pembantu rumah tangga dan tamu jangka panjang memberikan gambaran komprehensif tentang dinamika konsumsi dalam unit keluarga.",
+    "page_references": "42, 46",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Mengapa konsep 'dark tourism' dimasukkan dalam klasifikasi aktivitas?",
+    "ground_truth": "Mengakomodasi tren wisata alternatif dan kebutuhan pemetaan potensi ekonomi dari destinasi bersejarah sensitif.",
+    "page_references": "82",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana integrasi konsep kearifan lokal tercermin dalam definisi objek wisata?",
+    "ground_truth": "Terlihat melalui inklusi desa adat, kerajinan tradisional, dan situs budaya sebagai bagian dari destinasi wisata terdaftar.",
+    "page_references": "135-139",
+    "type": "multi_hop_abstract"
+  },
+  {
+    "user_input": "Bagaimana kombinasi definisi 'perjalanan wisata' dan 'kegiatan rutin' mempengaruhi klasifikasi tujuan perjalanan kerja?",
+    "ground_truth": "Perjalanan kerja hanya tercatat jika bersifat insidental (misalnya rapat luar kota) bukan rutinitas harian, dengan batasan frekuensi kunjungan <4 kali dalam 6 bulan ke lokasi yang sama.",
+    "page_references": "48, 50, 81",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria spesifik yang membedakan 'pengeluaran transportasi darat' antarkota dengan transportasi lokal dalam kuesioner?",
+    "ground_truth": "Transportasi antarkota mencakup biaya dari kota asal ke destinasi (contoh: tiket bus antarprovinsi), sedangkan transportasi lokal hanya untuk perpindahan dalam area destinasi (contoh: taksi/ojek dalam kota)",
+    "page_references": "79, 83-84",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana integrasi definisi 'wisata kesehatan' dan 'pengeluaran medis' mempengaruhi perhitungan nilai ekonomi pariwisata?",
+    "ground_truth": "Mencakup biaya konsultasi spesialis, rawat inap, dan terapi kesehatan yang secara spesifik terkait dengan tujuan perjalanan ke fasilitas medis tertentu.",
+    "page_references": "81, 86, 135",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa syarat kombinasi durasi dan akomodasi untuk mengklasifikasikan 'wisata keluarga'?",
+    "ground_truth": "Minimal menginap 1 malam di rumah keluarga/teman dengan durasi kunjungan >6 jam, disertai aktivitas rekreasional bersama.",
+    "page_references": "48, 78, 81",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana parameter 'lama tinggal' dan 'jenis akomodasi' menentukan kategori pengeluaran harian?",
+    "ground_truth": "Penginapan >24 jam di hotel berbintang dikalkulasi termasuk biaya kamar, sedangkan homestay <24 jam hanya menghitung biaya konsumsi.",
+    "page_references": "78, 83-84",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria spesifik 'wisata belanja' berdasarkan kombinasi lokasi dan jenis barang yang dibeli?",
+    "ground_truth": "Pembelian di pusat kerajinan tradisional/pasar khusus dengan minimal 60% nilai belanja untuk produk khas daerah tujuan.",
+    "page_references": "81, 85-86",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana integrasi definisi 'moda transportasi' dan 'wilayah geografis' mempengaruhi klasifikasi wisata bahari?",
+    "ground_truth": "Perjalanan menggunakan kapal feri/peedaratan ke pulau dengan aktivitas utama snorkeling/diving selama >4 jam.",
+    "page_references": "79-80, 81",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa batasan kombinasi durasi dan jarak untuk 'wisata sehari' (day trip)?",
+    "ground_truth": "Perjalanan >6 jam tetapi <24 jam ke kabupaten berbeda dengan jarak minimal 50 km dari tempat tinggal.",
+    "page_references": "48, 79",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana kriteria 'wisata edukasi' dikombinasikan dengan jenis institusi yang dikunjungi?",
+    "ground_truth": "Kunjungan ke museum/situs warisan budaya dengan aktivitas terstruktur seperti workshop/pemandu wisata bersertifikat.",
+    "page_references": "81-82, 135",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa syarat spesifik kombinasi pengeluaran dan durasi untuk kategori 'wisata mewah'?",
+    "ground_truth": "Pengeluaran harian >3x UMP daerah tujuan dengan minimal 2 malam menginap di akomodasi bintang 4/5.",
+    "page_references": "78, 83-84, 139",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana integrasi definisi 'wisata gastronomi' dan 'cenderamata kuliner' dalam kuesioner?",
+    "ground_truth": "Pencatatan pembelian bahan makanan khas kemasan (rendang kaleng, kopi kemasan) >Rp200.000 sebagai cenderamata, bukan konsumsi langsung.",
+    "page_references": "81, 85-86",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa kriteria kombinasi aktivitas dan durasi untuk 'wisata petualangan ekstrem'?",
+    "ground_truth": "Aktivitas berlisensi (rafting grade III-IV, panjat tebing) dengan durasi >3 jam dibimbing operator resmi.",
+    "page_references": "81, 135",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana parameter 'jumlah peserta' dan 'jenis akomodasi' menentukan klasifikasi wisata kelompok?",
+    "ground_truth": "Minimal 10 orang dengan penginapan di homestay/villa yang sama selama >1 malam.",
+    "page_references": "78, 81",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Apa syarat spesifik kombinasi moda transportasi dan tujuan untuk 'wisata lintas batas provinsi'?",
+    "ground_truth": "Perjalanan menggunakan pesawat/bus antarkota dengan bukti tiket/stempel masuk provinsi tujuan.",
+    "page_references": "79-80, 83",
+    "type": "multi_hop_spesific"
+  },
+  {
+    "user_input": "Bagaimana integrasi definisi 'wisata religi' dan 'festival budaya' dalam kategori pengeluaran?",
+    "ground_truth": "Donasi/sumbangan ke tempat ibadah >Rp100.000 dan pembelian atribut ritual khusus selama event festival keagamaan.",
+    "page_references": "81, 85-86",
+    "type": "multi_hop_spesific"
+  }
+]

@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+motor
+python-dotenv
+openai
+sentence-transformers

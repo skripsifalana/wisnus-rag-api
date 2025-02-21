@@ -1,0 +1,218 @@
+[
+  {
+    "user_input": "Apa definisi wisatawan nusantara menurut pedoman survei ini?",
+    "ground_truth": "Wisatawan nusantara adalah seseorang yang melakukan perjalanan di wilayah teritorial suatu negara, dalam hal ini adalah Indonesia, dengan lama perjalanan kurang dari 12 bulan, dengan berwisata ke objek wisata dan atau mengunjungi Kab/Kota lain dan tinggal minimal 6 jam serta perjalanan tersebut bukan bertujuan untuk memperoleh penghasilan di tempat yang dikunjungi serta bukan merupakan perjalanan dalam rangka bekerja atau sekolah secara rutin.",
+    "page_references": 52,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan perjalanan wisata dalam survei ini?",
+    "ground_truth": "Perjalanan wisata adalah bepergian/perjalanan yang di lakukan oleh penduduk Indonesia dari tempat tinggal biasanya ke tempat di luar lingkungan sehari-hari di wilayah geografis Indonesia secara sukarela selama kurang dari 12 bulan dan bukan bertujuan untuk bekerja (memperoleh upah/gaji dari penduduk ditempat yang dituju) atau sekolah secara rutin.",
+    "page_references": 52,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa pengertian dari objek daya tarik wisata (ODTW) menurut UU No. 9 Tahun 2009?",
+    "ground_truth": "Objek daya tarik wisata (ODTW) menurut UU No. 9 Tahun 2009 adalah segala sesuatu yang memiliki keunikan, keindahan, dan nilai yang berupa keanekaragaman kekayaan alam, budaya, dan hasil buatan manusia yang menjadi sasaran atau tujuan kunjungan wisatawan.",
+    "page_references": 53,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa saja yang termasuk dalam kategori akomodasi komersial?",
+    "ground_truth": "Akomodasi komersial meliputi tempat menginap saat bepergian yang bersifat komersial selain Hotel (Bintang dan Nonbintang), termasuk apartemen hotel, penginapan remaja, pondok wisata, villa, dan akomodasi lainnya.",
+    "page_references": 82,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi kegiatan rutin yang dikecualikan dalam perjalanan wisata?",
+    "ground_truth": "Kegiatan rutin yang dikecualikan dalam perjalanan wisata adalah kegiatan sekolah dan atau bekerja (memperoleh upah/gaji sesuai tugas pokoknya dari penduduk ditempat yang dituju), yang dilakukan secara rutin (reguler), baik frekuensinya, lokasinya, maupun kegiatannya. Termasuk kegiatan rutin jika mengunjungi Kab/Kota yang sama minimal 4 kali selama kurang dari 6 bulan.",
+    "page_references": 52,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan pengeluaran akomodasi dalam survei?",
+    "ground_truth": "Pengeluaran akomodasi adalah seluruh pengeluaran untuk akomodasi, termasuk juga yang menginap di rumah penduduk bila memang mengeluarkan biaya. Jika pengeluaran untuk akomodasi sudah termasuk makan pagi (breakfast), baik makanan tersebut dimakan atau tidak, maka pengeluaran tersebut dimasukan ke pengeluaran akomodasi.",
+    "page_references": 87,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apakah kendaraan tidak bermotor termasuk dalam moda angkutan?",
+    "ground_truth": "Iya, kendaraan tidak bermotor, seperti sepda, becak, andhong, dan sejenisnya termasuk dalam moda angkutan dengan kategori \"Lainnya\" dalam survei ini.",
+    "page_references": 84,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi cenderamata dalam kategori pengeluaran?",
+    "ground_truth": "Menurut KBBI, cenderamata adalah pemberian sebagai kenang-kenangan, sebagai pertanda ingat, dan sebagainya kepada kekasih atau jantung hati.",
+    "page_references": 89,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan kegiatan MICE dalam wisata?",
+    "ground_truth": "Wisata MICE meliputi pertemuan dan forum bisnis, insentif, konferensi, eksibisi pameran dagang, bisnis pertunjukan, konser, film.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa pengertian dari rumah tangga biasa dalam survei ini?",
+    "ground_truth": "Rumah tangga biasa adalah seseorang atau sekelompok orang yang mendiami sebagian atau seluruh bangunan fisik atau sensus dan biasanya tinggal bersama serta makan dari satu “dapur” . Rumah tangga biasa umumnya terdiri dari bapak, ibu, anak, dan sebagainya.",
+    "page_references": 45,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan wisata kesehatan?",
+    "ground_truth": "Wisata Olahraga/Kesehatan meliputi spa dan kebugaran, yoga dan meditasi, wisata medis dan kesehatan, berpatisipasi dalam event olahraga internasional, menonton event olahraga, pemusatan latihan, mengunjungi lokasi olahraga ekstrem, berpatisipasi dalam olahraga ekstrem, belajar dan latihan olahraga ekstrem.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi pengeluaran transportasi dalam survei?",
+    "ground_truth": "Pengeluaran transportasi adalah seluruh pengeluaran atau biaya transportasi yang dilakukan dalam rangka melakukan perjalanan pada masing-masing jenis angkutan dari setiap art jalan. Jenis angkutan dikelompokan menjadi angkutan udara, kereta api, darat, laut, dan sungai/danau/penyeberangan. Pengeluaran ini meliputi semua jenis pengeluaran untuk setiap jenis angkutan, mulai dari meninggalkan rumah sampai kembali ke rumah.",
+    "page_references": 88,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan wisata sejarah/religi?",
+    "ground_truth": "Wisata Sejarah/Religi merupakan wisata warisan budaya/sejarah, keagamaan, dan wisata syariah), meliputi: penelitian/pendidikan yang berhubungan dengan kebudayaan, ziarah, mengunjungi tempat suci, museum, warisan budaya, keagamaan, memorial, jejak peradaban.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi kepala rumah tangga dalam survei?",
+    "ground_truth": "Kepala rumah tangga (KRT) adalah salah seorang dari ART yang bertanggung jawab atas pemenuhan kebutuhan sehari-hari di rumah tangga atau orang yang dituakan atau dianggap/ditunjuk sebagai KRT.",
+    "page_references": 48,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan wisata kuliner?",
+    "ground_truth": "Wisata Kuliner adalah jenis kegiatan wisata yang meliputi acara jamuan makan, membeli makanan lokal, dan mencoba makanan unik.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apakah bermalam di kendaraan selama perjalanan dianggap menggunakan akomodasi?",
+    "ground_truth": "Bermalam di kendaraan selama dalam perjalanan seperti di mobil, kapal, kereta api dan semisalnya tidak dianggap menggunakan akomodasi.",
+    "page_references": 82,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam pengeluaran hiburan?",
+    "ground_truth": "Pengeluaran hiburan meliputi seluruh pengeluaran untuk menikmati jasa hiburan dan rekreasi oleh masing-masing art jalan seperti biaya pembelian tiket masuk Taman Impian Jaya Ancol dan sebagainya.",
+    "page_references": 89,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi wisata petualangan?",
+    "ground_truth": "Wisata Petualangan meliputi berkemah, trekking/hiking/climbing, jelajah goa, berburu, rafting, kayaking, river/lake cruise, bungee jumping, sky diving.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan pengeluaran perjalanan dalam survei ini?",
+    "ground_truth": "Pengeluaran perjalanan meliputi seluruh pengeluaran yang dilakukan dalam rangka melakukan perjalanan oleh seseorang yang bepergian yang meluputi pengeluaran akomodasi, makanan dan minuman, rokok/tembakau, paket perjalanan, cenderamata, belanja, dan lain-lain.",
+    "page_references": 86,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi pengeluaran paket perjalanan?",
+    "ground_truth": "Pengeluaran paket perjalanan adalah seluruh biaya yang dibayarkan kepada biro/agen perjalanan atau penyelenggara perjalanan lainnya. Pengeluaran ini meliputi semua biaya yang dikeluarkan untuk membeli paket perjalanan yang biasanya sudah mencakup biaya transportasi, dan lainnya baik yang diselenggarakan oleh Biro Perjalanan maupun institusi lain seperti sekolah, karang taruna, majelis taklim dan sebagainya.akomodasi",
+    "page_references": 88,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa saja yang termasuk dalam wisata kota & pedesaan?",
+    "ground_truth": "Wisata Kota & Pedesaan meliputi belanja, mengunjungi teman atau kerabat, menikmati hiburan malam, tinggal di desa tradisional, mengunjungi pasar tradisional, wisata darmabakti, philantropis (dermawan) dan program tanggung jawab sosial perusahaan, fotografi and architectural visit, live-in program.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi pengeluaran kesehatan dalam survei?",
+    "ground_truth": "Pengeluaran kesehatan adalah seluruh pengeluaran untuk biaya kesehatan yang dilakukan terkait dengan perjalanan oleh masing-masing art. Biaya ini termasuk biaya untuk konsultasi dokter, obat, tindakan medis dan biaya rawat inap di rumah sakit. Termasuk juga untuk biaya pengobatan alternatif.",
+    "page_references": 90,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan dark tourism?",
+    "ground_truth": "Dark tourism menurut Seaton (1996) meliputi: Perjalanan menyaksikan hukuman mati di depan publik. Perjalanan melihat situs tempat kematian orang secara individu ataupun secara massal. Perjalanan ke tempat penawanan/pengasingan (pemakaman, cenotaphs, ruang bawah tanah dan monumen peringatan perang). Perjalanan untuk melihat bukti-bukti atau simbol-simbol yang mewakili kematian meskipun tidak berhubungan langsung dengan situsnya. Perjalanan untuk menyaksikan simulasi-simulasi yang berhubungan dengan kematian.",
+    "page_references": 86,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa kriteria kegiatan wisata bahari?",
+    "ground_truth": "Wisata Bahari meliputi selancar, berjemur, parasailing, naik kapal pesiar, sailing/yachting, memancing (di laut), menyelam, dan snorkeling.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi pengeluaran bahan bakar?",
+    "ground_truth": "Pengeluaran bahan bakar adalah seluruh pengeluaran untuk pembelian bahan bakar dan pelumas. Pengeluaran ini meliputi seluruh biaya yang dikeluarkan untuk membeli bahan bakar dan pelumas yang benar-benar digunakan dalam rangka melakukan perjalanan.",
+    "page_references": 88,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa itu survei digital wisatawan nusantara?",
+    "ground_truth": "Survei wisatawan nusantara adalah kegiatan rutin Badan Pusat Statistik (BPS) yang bertujuan untuk mengumpulkan data mengenai wisatawan nusantara atau penduduk Indonesia yang melakukan perjalanan di wilayah Indonesia yang meliputi maksud/tujuan perjalanan, akomodasi yang digunakan, lama bepergian, dan rata-rata pengeluaran sehubungan dengan perjalanan yang dilakukan, disamping karakteristik pokok dari penduduk Indonesia yang melakukan perjalanan.",
+    "page_references": 3,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi pengeluaran seminar/pertemuan?",
+    "ground_truth": "Pengeluaran seminar/pertemuan adalah seluruh pengeluaran untuk Meeting, Incentive, Conference and Exhibition (MICE)/seminar/pertemuan. Pengeluaran ini meliputi biaya yang dikeluarkan untuk mengikuti kegiatan seminar/pertemuan tersebut. Dalam hal ini yang dimasukkan sebagai pengeluaran adalah hanya biaya seminarnya saja.",
+    "page_references": 88,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan eko wisata?",
+    "ground_truth": "Eko Wisata meliputi penelitian/pendidikan yang berhubungan dengan lingkungan, bersepeda gunung, safari & bird watching, susur sungai, penyelamatan hewan langka, eco riding & explore riding (berkuda), penjelajahan dan reli, bertani/berkebun.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa definisi pengeluaran belanja non-cenderamata?",
+    "ground_truth": "Pengeluaran belanja non-cenderamata adalah seluruh pengeluaran untuk belanja selain cenderamata oleh seseorang yang bepergian, misalnya pengeluaran untuk pembelian barang yang digunakan sendiri (sabun, odol, tisu, dsb).",
+    "page_references": 90,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang termasuk dalam wisata seni & budaya?",
+    "ground_truth": "Wisata Kesenian meliputi pertunjukan cerita rakyat, teater, pertunjukan budaya pop, upacara tradisi, karnaval, dan seni tradisional.",
+    "page_references": 85,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Siapa penyelenggara dari survei wisatawan nusantara ini?",
+    "ground_truth": "Badan Pusat Statistik (BPS)",
+    "page_references": 3,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa kegunaan dari data wisatawan nusantara?",
+    "ground_truth": "Data wisatawan nusantara sangat dibutuhkan dalam penyusunan rencana maupun kebijakan di bidang pariwisata.",
+    "page_references": 3,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa pengertian dari bekerja dalam survei ini?",
+    "ground_truth": "Bekerja adalah kegiatan melakukan pekerjaan dengan maksud memperoleh atau membantu memperoleh penghasilan atau keuntungan paling sedikit selama satu jam dalam seminggu yang lalu. Bekerja selama satu jam tersebut harus dilakukan berturut-turut dan tidak terputus. Melakukan pekerjaan dalam konsep bekerja adalah melakukan kegiatan ekonomi yang menghasilkan barang atau jasa. Penghasilan atau keuntungan mencakup upah/gaji/ pendapatan termasuk semua tunjangan dan bonus bagi pekerja/karyawan/pegawai dan hasil usaha berupa sewa, bunga atau keuntungan, baik berupa uang atau barang bagi pengusaha.",
+    "page_references": 72,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan sekolah dalam dokumen ini?",
+    "ground_truth": "Sekolah adalah kegiatan bersekolah di sekolah formal baik pada pendidikan dasar, pendidikan menengah atau pendidikan tinggi. Tidak termasuk yang sedang cuti.",
+    "page_references": 73,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Bagaimana penjelasan dari lama bepergian?",
+    "ground_truth": "Lama bepergian adalah jumlah hari yang digunakan untuk bepergian yang dihitung sejak responden meninggalkan tempat tinggalnya sampai ia kembali lagi ke rumahnya. Pertambahan hari ditandai dengan pergantian tanggal.",
+    "page_references": 83,
+    "is_verified": "TRUE"
+  },
+  {
+    "user_input": "Sejak kapan survei wisatawan nusantara diselenggarakan?",
+    "ground_truth": "Kegiatan pendataan wisnus dimulai sejak tahun 1981.",
+    "page_references": 5,
+    "is_verified": "TRUE"
+  }
+]
