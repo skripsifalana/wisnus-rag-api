@@ -1,14 +1,16 @@
 # app/api/routes.py
 
 from fastapi import APIRouter, HTTPException
-from app.services.pdf_processor import SemanticPDFProcessor
+# from app.services.pdf_processor import SemanticPDFProcessor
+from app.services.pdf_processor import MarkdownProcessor
 from app.services.vector_store import VectorStoreInitializer
 from app.services.rag_service import create_rag_chain, evaluate_rag_system, LLMHolder
 from app.models.schemas import QuestionRequest
 from app.config.llm2 import get_current_llm
 
 router = APIRouter()
-processor = SemanticPDFProcessor()
+# processor = SemanticPDFProcessor()
+processor = MarkdownProcessor()
 rag_chain = None
 rag_vector_store = None
 llm_holder = None
@@ -22,7 +24,10 @@ async def initialize_rag():
         llm_holder = LLMHolder(llm)
         
         # Proses dokumen PDF
-        docs = processor.process_pdfs(mode="recursive", chunk_size=600, chunk_overlap=300)
+        # docs = processor.process_pdfs(mode="recursive", chunk_size=512, chunk_overlap=128)  
+        # docs = processor.process_pdfs(semantic_threshold=90.0, min_chunk_size=512)  
+        # docs = processor.process_pdfs(semantic_threshold=90.0, min_chunk_size=512)  
+        docs = processor.process_markdowns()  
         vector_store_initializer = VectorStoreInitializer()
         rag_vector_store = vector_store_initializer.initialize_vector_store()
         if rag_vector_store.collection.count_documents({}) == 0:

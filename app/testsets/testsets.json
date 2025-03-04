@@ -1,218 +1,222 @@
 [
   {
     "user_input": "Apa definisi wisatawan nusantara menurut pedoman survei ini?",
-    "ground_truth": "Wisatawan nusantara adalah seseorang yang melakukan perjalanan di wilayah teritorial suatu negara, dalam hal ini adalah Indonesia, dengan lama perjalanan kurang dari 12 bulan, dengan berwisata ke objek wisata dan atau mengunjungi Kab/Kota lain dan tinggal minimal 6 jam serta perjalanan tersebut bukan bertujuan untuk memperoleh penghasilan di tempat yang dikunjungi serta bukan merupakan perjalanan dalam rangka bekerja atau sekolah secara rutin.",
-    "page_references": 52,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisatawan Nusantara (wisnus)/ domestic tourists adalah seseorang yang melakukan perjalanan di wilayah teritorial suatu negara, dalam hal ini adalah Indonesia, dengan lama perjalanan kurang dari 12 bulan, dengan berwisata ke objek wisata dan atau mengunjungi Kab/Kota lain dan tinggal minimal 6 jam serta perjalanan tersebut bukan bertujuan untuk memperoleh penghasilan di tempat yang dikunjungi serta bukan merupakan perjalanan dalam rangka bekerja atau sekolah secara rutin.dalah Indonesia, dengan lama perjalanan kurang dari 12 bulan, dengan berwisata ke objek wisata dan atau mengunjungi Kab/Kota lain dan tinggal minimal 6 jam serta perjalanan tersebut bukan bertujuan untuk memperoleh penghasilan di tempat yang dikunjungi serta bukan merupakan perjalanan dalam rangka bekerja atau sekolah secara rutin."
   },
   {
     "user_input": "Apa yang dimaksud dengan perjalanan wisata dalam survei ini?",
-    "ground_truth": "Perjalanan wisata adalah bepergian/perjalanan yang di lakukan oleh penduduk Indonesia dari tempat tinggal biasanya ke tempat di luar lingkungan sehari-hari di wilayah geografis Indonesia secara sukarela selama kurang dari 12 bulan dan bukan bertujuan untuk bekerja (memperoleh upah/gaji dari penduduk ditempat yang dituju) atau sekolah secara rutin.",
-    "page_references": 52,
-    "is_verified": "TRUE"
+    "ground_truth": "Perjalanan Wisata adalah bepergian/perjalanan yang dilakukan oleh penduduk Indonesia dari tempat tinggal biasanya ke tempat di luar lingkungan sehari-hari di wilayah geografis Indonesia secara sukarela selama kurang dari 12 bulan dan bukan bertujuan untuk bekerja (memperoleh upah/gaji dari penduduk di tempat yang dituju) atau sekolah secara rutin. Tempat di luar lingkungan sehari-hari dimaksud meliputi: (1) Berwisata ke objek wisata, dan atau; (2) Mengunjungi Kab/Kota lain dan tinggal minimal 6 jam. Kegiatan rutin yang dimaksud adalah kegiatan sekolah dan atau bekerja (memperoleh upah/gaji sesuai tugas pokoknya dari penduduk di tempat yang dituju), yang dilakukan secara rutin (reguler), baik frekuensinya, lokasinya, maupun kegiatannya. Termasuk kegiatan rutin jika mengunjungi Kab/Kota yang sama minimal 4 kali selama kurang dari 6 bulan."
   },
   {
     "user_input": "Apa pengertian dari objek daya tarik wisata (ODTW) menurut UU No. 9 Tahun 2009?",
-    "ground_truth": "Objek daya tarik wisata (ODTW) menurut UU No. 9 Tahun 2009 adalah segala sesuatu yang memiliki keunikan, keindahan, dan nilai yang berupa keanekaragaman kekayaan alam, budaya, dan hasil buatan manusia yang menjadi sasaran atau tujuan kunjungan wisatawan.",
-    "page_references": 53,
-    "is_verified": "TRUE"
+    "ground_truth": "Objek daya tarik wisata (ODTW) menurut UU No 9 tahun 2009 tentang kepariwisataan adalah segala sesuatu yang memiliki keunikan, keindahan, dan nilai yang berupa keanekaragaman kekayaan alam, budaya, dan hasil buatan manusia yang menjadi sasaran atau tujuan kunjungan wisatawan."
   },
   {
     "user_input": "Apa saja yang termasuk dalam kategori akomodasi komersial?",
-    "ground_truth": "Akomodasi komersial meliputi tempat menginap saat bepergian yang bersifat komersial selain Hotel (Bintang dan Nonbintang), termasuk apartemen hotel, penginapan remaja, pondok wisata, villa, dan akomodasi lainnya.",
-    "page_references": 82,
-    "is_verified": "TRUE"
+    "ground_truth": "Tempat menginap saat bepergian yang bersifat komersial selain Hotel (Bintang dan Nonbintang), termasuk apartemen hotel, penginapan remaja, pondok wisata, villa, dan akomodasi lainnya."
   },
   {
     "user_input": "Apa definisi kegiatan rutin yang dikecualikan dalam perjalanan wisata?",
-    "ground_truth": "Kegiatan rutin yang dikecualikan dalam perjalanan wisata adalah kegiatan sekolah dan atau bekerja (memperoleh upah/gaji sesuai tugas pokoknya dari penduduk ditempat yang dituju), yang dilakukan secara rutin (reguler), baik frekuensinya, lokasinya, maupun kegiatannya. Termasuk kegiatan rutin jika mengunjungi Kab/Kota yang sama minimal 4 kali selama kurang dari 6 bulan.",
-    "page_references": 52,
-    "is_verified": "TRUE"
+    "ground_truth": "Kegiatan rutin yang dikecualikan dalam perjalanan wisata adalah kegiatan sekolah dan atau bekerja (memperoleh upah/gaji sesuai tugas pokoknya dari penduduk ditempat yang dituju), yang dilakukan secara rutin (reguler), baik frekuensinya, lokasinya, maupun kegiatannya. Termasuk kegiatan rutin jika mengunjungi Kab/Kota yang sama minimal 4 kali selama kurang dari 6 bulan."
   },
   {
     "user_input": "Apa yang dimaksud dengan pengeluaran akomodasi dalam survei?",
-    "ground_truth": "Pengeluaran akomodasi adalah seluruh pengeluaran untuk akomodasi, termasuk juga yang menginap di rumah penduduk bila memang mengeluarkan biaya. Jika pengeluaran untuk akomodasi sudah termasuk makan pagi (breakfast), baik makanan tersebut dimakan atau tidak, maka pengeluaran tersebut dimasukan ke pengeluaran akomodasi.",
-    "page_references": 87,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran akomodasi adalah seluruh pengeluaran untuk akomodasi, termasuk juga yang menginap di rumah penduduk bila memang mengeluarkan biaya. Jika pengeluaran untuk akomodasi sudah termasuk makan pagi (breakfast), baik makanan tersebut dimakan atau tidak, maka pengeluaran tersebut dimasukan ke pengeluaran akomodasi."
   },
   {
     "user_input": "Apakah kendaraan tidak bermotor termasuk dalam moda angkutan?",
-    "ground_truth": "Iya, kendaraan tidak bermotor, seperti sepda, becak, andhong, dan sejenisnya termasuk dalam moda angkutan dengan kategori \"Lainnya\" dalam survei ini.",
-    "page_references": 84,
-    "is_verified": "TRUE"
+    "ground_truth": "Iya, kendaraan tidak bermotor, seperti sepda, becak, andhong, dan sejenisnya termasuk dalam moda angkutan dengan kategori \"Lainnya\" dalam survei ini."
   },
   {
     "user_input": "Apa definisi cenderamata dalam kategori pengeluaran?",
-    "ground_truth": "Menurut KBBI, cenderamata adalah pemberian sebagai kenang-kenangan, sebagai pertanda ingat, dan sebagainya kepada kekasih atau jantung hati.",
-    "page_references": 89,
-    "is_verified": "TRUE"
+    "ground_truth": "Menurut KBBI, cenderamata adalah pemberian sebagai kenang-kenangan, sebagai pertanda ingat, dan sebagainya kepada kekasih atau jantung hati."
   },
   {
     "user_input": "Apa yang dimaksud dengan kegiatan MICE dalam wisata?",
-    "ground_truth": "Wisata MICE meliputi pertemuan dan forum bisnis, insentif, konferensi, eksibisi pameran dagang, bisnis pertunjukan, konser, film.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata MICE meliputi pertemuan dan forum bisnis, insentif, konferensi, eksibisi pameran dagang, bisnis pertunjukan, konser, film."
   },
   {
     "user_input": "Apa pengertian dari rumah tangga biasa dalam survei ini?",
-    "ground_truth": "Rumah tangga biasa adalah seseorang atau sekelompok orang yang mendiami sebagian atau seluruh bangunan fisik atau sensus dan biasanya tinggal bersama serta makan dari satu “dapur” . Rumah tangga biasa umumnya terdiri dari bapak, ibu, anak, dan sebagainya.",
-    "page_references": 45,
-    "is_verified": "TRUE"
+    "ground_truth": "Rumah tangga biasa adalah seseorang atau sekelompok orang yang mendiami sebagian atau seluruh bangunan fisik atau sensus dan biasanya tinggal bersama serta makan dari satu “dapur” . Rumah tangga biasa umumnya terdiri dari bapak, ibu, anak, dan sebagainya."
   },
   {
     "user_input": "Apa yang dimaksud dengan wisata kesehatan?",
-    "ground_truth": "Wisata Olahraga/Kesehatan meliputi spa dan kebugaran, yoga dan meditasi, wisata medis dan kesehatan, berpatisipasi dalam event olahraga internasional, menonton event olahraga, pemusatan latihan, mengunjungi lokasi olahraga ekstrem, berpatisipasi dalam olahraga ekstrem, belajar dan latihan olahraga ekstrem.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Olahraga/Kesehatan meliputi spa dan kebugaran, yoga dan meditasi, wisata medis dan kesehatan, berpatisipasi dalam event olahraga internasional, menonton event olahraga, pemusatan latihan, mengunjungi lokasi olahraga ekstrem, berpatisipasi dalam olahraga ekstrem, belajar dan latihan olahraga ekstrem."
   },
   {
-    "user_input": "Apa definisi pengeluaran transportasi dalam survei?",
-    "ground_truth": "Pengeluaran transportasi adalah seluruh pengeluaran atau biaya transportasi yang dilakukan dalam rangka melakukan perjalanan pada masing-masing jenis angkutan dari setiap art jalan. Jenis angkutan dikelompokan menjadi angkutan udara, kereta api, darat, laut, dan sungai/danau/penyeberangan. Pengeluaran ini meliputi semua jenis pengeluaran untuk setiap jenis angkutan, mulai dari meninggalkan rumah sampai kembali ke rumah.",
-    "page_references": 88,
-    "is_verified": "TRUE"
+    "user_input": "Apa definisi pengeluaran angkutan dalam survei?",
+    "ground_truth": "Pengeluaran angkutan adalah seluruh pengeluaran atau biaya transportasi yang dilakukan dalam rangka melakukan perjalanan pada masing-masing jenis angkutan dari setiap art jalan. Jenis angkutan dikelompokan menjadi angkutan udara, kereta api, darat, laut, dan sungai/danau/penyeberangan. Pengeluaran ini meliputi semua jenis pengeluaran untuk setiap jenis angkutan, mulai dari meninggalkan rumah sampai kembali ke rumah."
   },
   {
     "user_input": "Apa yang dimaksud dengan wisata sejarah/religi?",
-    "ground_truth": "Wisata Sejarah/Religi merupakan wisata warisan budaya/sejarah, keagamaan, dan wisata syariah), meliputi: penelitian/pendidikan yang berhubungan dengan kebudayaan, ziarah, mengunjungi tempat suci, museum, warisan budaya, keagamaan, memorial, jejak peradaban.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Sejarah/Religi merupakan wisata warisan budaya/sejarah, keagamaan, dan wisata syariah), meliputi: penelitian/pendidikan yang berhubungan dengan kebudayaan, ziarah, mengunjungi tempat suci, museum, warisan budaya, keagamaan, memorial, jejak peradaban."
   },
   {
     "user_input": "Apa definisi kepala rumah tangga dalam survei?",
-    "ground_truth": "Kepala rumah tangga (KRT) adalah salah seorang dari ART yang bertanggung jawab atas pemenuhan kebutuhan sehari-hari di rumah tangga atau orang yang dituakan atau dianggap/ditunjuk sebagai KRT.",
-    "page_references": 48,
-    "is_verified": "TRUE"
+    "ground_truth": "Kepala rumah tangga (KRT) adalah salah seorang dari ART yang bertanggung jawab atas pemenuhan kebutuhan sehari-hari di rumah tangga atau orang yang dituakan atau dianggap/ditunjuk sebagai KRT."
   },
   {
     "user_input": "Apa yang dimaksud dengan wisata kuliner?",
-    "ground_truth": "Wisata Kuliner adalah jenis kegiatan wisata yang meliputi acara jamuan makan, membeli makanan lokal, dan mencoba makanan unik.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Kuliner adalah jenis kegiatan wisata yang meliputi acara jamuan makan, membeli makanan lokal, dan mencoba makanan unik."
   },
   {
     "user_input": "Apakah bermalam di kendaraan selama perjalanan dianggap menggunakan akomodasi?",
-    "ground_truth": "Bermalam di kendaraan selama dalam perjalanan seperti di mobil, kapal, kereta api dan semisalnya tidak dianggap menggunakan akomodasi.",
-    "page_references": 82,
-    "is_verified": "TRUE"
+    "ground_truth": "Bermalam di kendaraan selama dalam perjalanan seperti di mobil, kapal, kereta api dan semisalnya tidak dianggap menggunakan akomodasi."
   },
   {
     "user_input": "Apa yang termasuk dalam pengeluaran hiburan?",
-    "ground_truth": "Pengeluaran hiburan meliputi seluruh pengeluaran untuk menikmati jasa hiburan dan rekreasi oleh masing-masing art jalan seperti biaya pembelian tiket masuk Taman Impian Jaya Ancol dan sebagainya.",
-    "page_references": 89,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran hiburan/rekreasi adalah pengeluaran untuk menikmati jasa hiburan dan rekreasi oleh masing-masing art jalan seperti biaya pembelian tiket masuk Taman Impian Jaya Ancol dan sebagainya."
   },
   {
     "user_input": "Apa definisi wisata petualangan?",
-    "ground_truth": "Wisata Petualangan meliputi berkemah, trekking/hiking/climbing, jelajah goa, berburu, rafting, kayaking, river/lake cruise, bungee jumping, sky diving.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Petualangan meliputi berkemah, trekking/hiking/climbing, jelajah goa, berburu, rafting, kayaking, river/lake cruise, bungee jumping, sky diving."
   },
   {
     "user_input": "Apa yang dimaksud dengan pengeluaran perjalanan dalam survei ini?",
-    "ground_truth": "Pengeluaran perjalanan meliputi seluruh pengeluaran yang dilakukan dalam rangka melakukan perjalanan oleh seseorang yang bepergian yang meluputi pengeluaran akomodasi, makanan dan minuman, rokok/tembakau, paket perjalanan, cenderamata, belanja, dan lain-lain.",
-    "page_references": 86,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran perjalanan adalah nilai pengeluaran dalam rupiah yang betul-betul dikeluarkan oleh anggota rumah tangga yang bersangkutan atau oleh kepala rumah tangga sebagai orang yang memimpin perjalanan seluruh anggota rumah tangga baik sebelum, selama dan sesudah melakukan perjalanan yang berkaitan dengan perjalanan terakhir. Termasuk juga biaya yang dikeluarkan oleh pihak lain (teman, perusahaan atau institusi) yang terkait dengan perjalanan tersebut. Yang tidak termasuk dalam pengeluaran perjalanan antara lain adalah memberi uang (transfer) kepada teman atau keluarga yang dikunjungi, pembelian barang dagangan yang akan dijual kembali dan pengeluaran untuk tujuan investasi."
   },
   {
     "user_input": "Apa definisi pengeluaran paket perjalanan?",
-    "ground_truth": "Pengeluaran paket perjalanan adalah seluruh biaya yang dibayarkan kepada biro/agen perjalanan atau penyelenggara perjalanan lainnya. Pengeluaran ini meliputi semua biaya yang dikeluarkan untuk membeli paket perjalanan yang biasanya sudah mencakup biaya transportasi, dan lainnya baik yang diselenggarakan oleh Biro Perjalanan maupun institusi lain seperti sekolah, karang taruna, majelis taklim dan sebagainya.akomodasi",
-    "page_references": 88,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran paket perjalanan adalah seluruh biaya yang dibayarkan kepada biro/agen perjalanan atau penyelenggara perjalanan lainnya. Pengeluaran ini meliputi semua biaya yang dikeluarkan untuk membeli paket perjalanan yang biasanya sudah mencakup biaya transportasi, akomodasi dan lainnya baik yang diselenggarakan oleh Biro Perjalanan maupun institusi lain seperti sekolah, karang taruna, majelis taklim dan sebagainya."
   },
   {
     "user_input": "Apa saja yang termasuk dalam wisata kota & pedesaan?",
-    "ground_truth": "Wisata Kota & Pedesaan meliputi belanja, mengunjungi teman atau kerabat, menikmati hiburan malam, tinggal di desa tradisional, mengunjungi pasar tradisional, wisata darmabakti, philantropis (dermawan) dan program tanggung jawab sosial perusahaan, fotografi and architectural visit, live-in program.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Kota & Pedesaan meliputi belanja, mengunjungi teman atau kerabat, menikmati hiburan malam, tinggal di desa tradisional, mengunjungi pasar tradisional, wisata darmabakti, philantropis (dermawan) dan program tanggung jawab sosial perusahaan, fotografi and architectural visit, live-in program."
   },
   {
     "user_input": "Apa definisi pengeluaran kesehatan dalam survei?",
-    "ground_truth": "Pengeluaran kesehatan adalah seluruh pengeluaran untuk biaya kesehatan yang dilakukan terkait dengan perjalanan oleh masing-masing art. Biaya ini termasuk biaya untuk konsultasi dokter, obat, tindakan medis dan biaya rawat inap di rumah sakit. Termasuk juga untuk biaya pengobatan alternatif.",
-    "page_references": 90,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran kesehatan adalah seluruh pengeluaran untuk biaya kesehatan yang dilakukan terkait dengan perjalanan oleh masing-masing art. Biaya ini termasuk biaya untuk konsultasi dokter, obat, tindakan medis dan biaya rawat inap di rumah sakit. Termasuk juga untuk biaya pengobatan alternatif."
   },
   {
     "user_input": "Apa yang dimaksud dengan dark tourism?",
-    "ground_truth": "Dark tourism menurut Seaton (1996) meliputi: Perjalanan menyaksikan hukuman mati di depan publik. Perjalanan melihat situs tempat kematian orang secara individu ataupun secara massal. Perjalanan ke tempat penawanan/pengasingan (pemakaman, cenotaphs, ruang bawah tanah dan monumen peringatan perang). Perjalanan untuk melihat bukti-bukti atau simbol-simbol yang mewakili kematian meskipun tidak berhubungan langsung dengan situsnya. Perjalanan untuk menyaksikan simulasi-simulasi yang berhubungan dengan kematian.",
-    "page_references": 86,
-    "is_verified": "TRUE"
+    "ground_truth": "Dark tourism menurut Seaton (1996) meliputi: Perjalanan menyaksikan hukuman mati di depan publik. Perjalanan melihat situs tempat kematian orang secara individu ataupun secara massal. Perjalanan ke tempat penawanan/pengasingan (pemakaman, cenotaphs, ruang bawah tanah dan monumen peringatan perang). Perjalanan untuk melihat bukti-bukti atau simbol-simbol yang mewakili kematian meskipun tidak berhubungan langsung dengan situsnya. Perjalanan untuk menyaksikan simulasi-simulasi yang berhubungan dengan kematian."
   },
   {
     "user_input": "Apa kriteria kegiatan wisata bahari?",
-    "ground_truth": "Wisata Bahari meliputi selancar, berjemur, parasailing, naik kapal pesiar, sailing/yachting, memancing (di laut), menyelam, dan snorkeling.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Bahari meliputi selancar, berjemur, parasailing, naik kapal pesiar, sailing/yachting, memancing (di laut), menyelam, dan snorkeling."
   },
   {
     "user_input": "Apa definisi pengeluaran bahan bakar?",
-    "ground_truth": "Pengeluaran bahan bakar adalah seluruh pengeluaran untuk pembelian bahan bakar dan pelumas. Pengeluaran ini meliputi seluruh biaya yang dikeluarkan untuk membeli bahan bakar dan pelumas yang benar-benar digunakan dalam rangka melakukan perjalanan.",
-    "page_references": 88,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran bahan bakar dan pelumas adalah seluruh pengeluaran untuk pembelian bahan bakar dan pelumas. Pengeluaran ini meliputi seluruh biaya yang dikeluarkan untuk membeli bahan bakar dan pelumas yang benar-benar digunakan dalam rangka melakukan perjalanan."
   },
   {
     "user_input": "Apa itu survei digital wisatawan nusantara?",
-    "ground_truth": "Survei wisatawan nusantara adalah kegiatan rutin Badan Pusat Statistik (BPS) yang bertujuan untuk mengumpulkan data mengenai wisatawan nusantara atau penduduk Indonesia yang melakukan perjalanan di wilayah Indonesia yang meliputi maksud/tujuan perjalanan, akomodasi yang digunakan, lama bepergian, dan rata-rata pengeluaran sehubungan dengan perjalanan yang dilakukan, disamping karakteristik pokok dari penduduk Indonesia yang melakukan perjalanan.",
-    "page_references": 3,
-    "is_verified": "TRUE"
+    "ground_truth": "Survei wisatawan nusantara adalah kegiatan rutin Badan Pusat Statistik (BPS) yang bertujuan untuk mengumpulkan data mengenai wisatawan nusantara atau penduduk Indonesia yang melakukan perjalanan di wilayah Indonesia yang meliputi maksud/tujuan perjalanan, akomodasi yang digunakan, lama bepergian, dan rata-rata pengeluaran sehubungan dengan perjalanan yang dilakukan, disamping karakteristik pokok dari penduduk Indonesia yang melakukan perjalanan."
   },
   {
     "user_input": "Apa definisi pengeluaran seminar/pertemuan?",
-    "ground_truth": "Pengeluaran seminar/pertemuan adalah seluruh pengeluaran untuk Meeting, Incentive, Conference and Exhibition (MICE)/seminar/pertemuan. Pengeluaran ini meliputi biaya yang dikeluarkan untuk mengikuti kegiatan seminar/pertemuan tersebut. Dalam hal ini yang dimasukkan sebagai pengeluaran adalah hanya biaya seminarnya saja.",
-    "page_references": 88,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran seminar/pertemuan adalah seluruh pengeluaran untuk Meeting, Incentive, Conference and Exhibition (MICE)/seminar/pertemuan. Pengeluaran ini meliputi biaya yang dikeluarkan untuk mengikuti kegiatan seminar/pertemuan tersebut. Dalam hal ini yang dimasukkan sebagai pengeluaran adalah hanya biaya seminarnya saja."
   },
   {
     "user_input": "Apa yang dimaksud dengan eko wisata?",
-    "ground_truth": "Eko Wisata meliputi penelitian/pendidikan yang berhubungan dengan lingkungan, bersepeda gunung, safari & bird watching, susur sungai, penyelamatan hewan langka, eco riding & explore riding (berkuda), penjelajahan dan reli, bertani/berkebun.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Eko Wisata meliputi penelitian/pendidikan yang berhubungan dengan lingkungan, bersepeda gunung, safari & bird watching, susur sungai, penyelamatan hewan langka, eco riding & explore riding (berkuda), penjelajahan dan reli, bertani/berkebun."
   },
   {
     "user_input": "Apa definisi pengeluaran belanja non-cenderamata?",
-    "ground_truth": "Pengeluaran belanja non-cenderamata adalah seluruh pengeluaran untuk belanja selain cenderamata oleh seseorang yang bepergian, misalnya pengeluaran untuk pembelian barang yang digunakan sendiri (sabun, odol, tisu, dsb).",
-    "page_references": 90,
-    "is_verified": "TRUE"
+    "ground_truth": "Pengeluaran belanja non-cenderamata adalah seluruh pengeluaran untuk belanja selain cenderamata oleh seseorang yang bepergian, misalnya pengeluaran untuk pembelian barang yang digunakan sendiri (sabun, odol, tisu, dsb)."
   },
   {
     "user_input": "Apa yang termasuk dalam wisata seni & budaya?",
-    "ground_truth": "Wisata Kesenian meliputi pertunjukan cerita rakyat, teater, pertunjukan budaya pop, upacara tradisi, karnaval, dan seni tradisional.",
-    "page_references": 85,
-    "is_verified": "TRUE"
+    "ground_truth": "Wisata Kesenian meliputi pertunjukan cerita rakyat, teater, pertunjukan budaya pop, upacara tradisi, karnaval, dan seni tradisional."
   },
   {
     "user_input": "Siapa penyelenggara dari survei wisatawan nusantara ini?",
-    "ground_truth": "Badan Pusat Statistik (BPS)",
-    "page_references": 3,
-    "is_verified": "TRUE"
+    "ground_truth": "Badan Pusat Statistik (BPS)"
   },
   {
     "user_input": "Apa kegunaan dari data wisatawan nusantara?",
-    "ground_truth": "Data wisatawan nusantara sangat dibutuhkan dalam penyusunan rencana maupun kebijakan di bidang pariwisata.",
-    "page_references": 3,
-    "is_verified": "TRUE"
+    "ground_truth": "Data wisatawan nusantara sangat dibutuhkan dalam penyusunan rencana maupun kebijakan di bidang pariwisata."
   },
   {
     "user_input": "Apa pengertian dari bekerja dalam survei ini?",
-    "ground_truth": "Bekerja adalah kegiatan melakukan pekerjaan dengan maksud memperoleh atau membantu memperoleh penghasilan atau keuntungan paling sedikit selama satu jam dalam seminggu yang lalu. Bekerja selama satu jam tersebut harus dilakukan berturut-turut dan tidak terputus. Melakukan pekerjaan dalam konsep bekerja adalah melakukan kegiatan ekonomi yang menghasilkan barang atau jasa. Penghasilan atau keuntungan mencakup upah/gaji/ pendapatan termasuk semua tunjangan dan bonus bagi pekerja/karyawan/pegawai dan hasil usaha berupa sewa, bunga atau keuntungan, baik berupa uang atau barang bagi pengusaha.",
-    "page_references": 72,
-    "is_verified": "TRUE"
+    "ground_truth": "Bekerja adalah kegiatan melakukan pekerjaan dengan maksud memperoleh atau membantu memperoleh penghasilan atau keuntungan paling sedikit selama satu jam dalam seminggu yang lalu. Bekerja selama satu jam tersebut harus dilakukan berturut-turut dan tidak terputus. Melakukan pekerjaan dalam konsep bekerja adalah melakukan kegiatan ekonomi yang menghasilkan barang atau jasa. Penghasilan atau keuntungan mencakup upah/gaji/ pendapatan termasuk semua tunjangan dan bonus bagi pekerja/karyawan/pegawai dan hasil usaha berupa sewa, bunga atau keuntungan, baik berupa uang atau barang bagi pengusaha."
   },
   {
     "user_input": "Apa yang dimaksud dengan sekolah dalam dokumen ini?",
-    "ground_truth": "Sekolah adalah kegiatan bersekolah di sekolah formal baik pada pendidikan dasar, pendidikan menengah atau pendidikan tinggi. Tidak termasuk yang sedang cuti.",
-    "page_references": 73,
-    "is_verified": "TRUE"
+    "ground_truth": "Sekolah adalah kegiatan bersekolah di sekolah formal baik pada pendidikan dasar, pendidikan menengah atau pendidikan tinggi. Tidak termasuk yang sedang cuti."
   },
   {
     "user_input": "Bagaimana penjelasan dari lama bepergian?",
-    "ground_truth": "Lama bepergian adalah jumlah hari yang digunakan untuk bepergian yang dihitung sejak responden meninggalkan tempat tinggalnya sampai ia kembali lagi ke rumahnya. Pertambahan hari ditandai dengan pergantian tanggal.",
-    "page_references": 83,
-    "is_verified": "TRUE"
+    "ground_truth": "Lama bepergian adalah jumlah hari yang digunakan untuk bepergian yang dihitung sejak responden meninggalkan tempat tinggalnya sampai ia kembali lagi ke rumahnya. Pertambahan hari ditandai dengan pergantian tanggal."
   },
   {
     "user_input": "Sejak kapan survei wisatawan nusantara diselenggarakan?",
-    "ground_truth": "Kegiatan pendataan wisnus dimulai sejak tahun 1981.",
-    "page_references": 5,
-    "is_verified": "TRUE"
+    "ground_truth": "Kegiatan pendataan wisnus dimulai sejak tahun 1981."
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan Big Data?",
+    "ground_truth": "Big data merupakan suatu informasi yang memiliki ukuran yang besar, kecepatan ketersediaan data yang tinggi dan jenis informasi yang beragam."
+  },
+  {
+    "user_input": "Sebutkan tiga karakteristik utama dari Big Data menurut Laney (2001)!",
+    "ground_truth": "Karakteristik utama dari big data adalah Volume, Velocity, dan Variety."
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan Mobile Positioning Data (MPD)?",
+    "ground_truth": "Mobile Positioning Data (MPD) merupakan suatu dataset berskala besar mengenai catatan transaksi dan lokasi dari pelanggan dari operator seluler (Mobile Network Operator/ MNO) yang diproses dan disimpan di dalam suatu sistem."
+  },
+  {
+    "user_input": "Apa perbedaan antara MPD pasif dan MPD aktif?",
+    "ground_truth": "MPD pasif merupakan data lokasi yang disimpan secara otomatis oleh sistem operator seluler setiap kali ponsel seseorang berinteraksi dengan jaringan seluler, seperti aktivitas panggilan, pengiriman atau penerimaan pesan, atau akses internet. Sementara, MPD aktif merupakan data penelusuran lokasi ponsel yang ditentukan menggunakan gelombang tertentu seperti GPS."
+  },
+  {
+    "user_input": "Sebutkan dua jenis data yang termasuk dalam MPD pasif!",
+    "ground_truth": "Dua jenis data yang termasuk dalam MPD pasif adalah Call Detail Record (CDR) dan Location Based Advertising/Signalling (LBA/LBS)."
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan Call Detail Record (CDR)?",
+    "ground_truth": "Call Detail Record (CDR) adalah data lokasi subscriber yang terekam ketika melakukan aktivitas pengiriman atau penerimaan pesan Short Message Service (SMS) dan aktivitas panggilan."
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan Location Based Advertising/Signalling (LBA/LBS)?",
+    "ground_truth": "Location Based Advertising/Signalling (LBA/LBS) adalah data lokasi subscriber yang terekam ketika melakukan segala aktivitas yang melibatkan jaringan seluler, seperti akses internet, updating lokasi wilayah, pencarian jaringan saat ponsel dihidupkan, atau aktivitas lainnya. Aktivitas SMS dan panggilan dalam CDR juga termasuk di dalam LBA/LBS ini."
+  },
+  {
+    "user_input": "Bagaimana cara kerja teknologi seluler dalam mengumpulkan data lokasi?",
+    "ground_truth": "Cara kerja teknologi seluler dalam mengumpulkan data lokasi adalah sebagai berikut.\r\n1. Sinyal dipancarkan oleh Base Transceiver Station (BTS), dan di BTS ini sebenarnya sudah tertanam kode sinkronisasi khusus.\r\n2. Ponsel akan menerima lokasi identitas dan frekuensi sinyal yang dipancarkan oleh BTS.\r\n3. Setelah menerima sinyal, perangkat akan mengirimkan log ke server, dan server akan melakukan komputasi waktu dan lokasi terjadinya transaksi ini.\r\n4. Data balikan sesuai jenis transaksi kemudian dikembalikan ke ponsel."
+  },
+  {
+    "user_input": "Apa saja keunggulan penggunaan MPD dalam mengumpulkan data mobilitas?",
+    "ground_truth": "Beberapa keunggulan MPD dalam pengumpulan data mobilitas adalah:\r\n1. Penggunaan telepon genggam tersebar luas dan populer di negara maju dan berkembang;\r\n2. Kecenderungan masyarakat untuk selalu membawa telepon genggam dan menjadikannya barang penting;\r\n3. Data awal sudah berbentuk digital sehingga bebas dari human error seperti keterbatasan ingatan responden atau kesalahan entri data; dan\r\n4. Penggunaan MPD memungkinkan dalam mempelajari perpindahan penduduk dalam dimensi ruang dan waktu secara lebih tepat."
+  },
+  {
+    "user_input": "Apa keterbatasan dari pemanfaatan MPD?",
+    "ground_truth": "Beberapa keterbatasan dalam pemanfaatan MPD antara lain:\r\n1. Kolaborasi yang rumit dengan MNO sebagai penyedia MPD terkait perlindungan dan kerahasiaan data (Ahas et al., 2011). Namun, terdapat beberapa mobile positioning system yang sedang dikembangkan dan tidak memerlukan kolaborasi dengan operator seluler, misalnya Google Mobile atau Nutimap (Ahas et al., 2010).\r\n2. Isu terkait privasi, akses data, dan pengambilan sampel dari pelanggan MNO (Järv et al., 2012).\r\n3. Biaya eksperimen data yang relatif tinggi serta ukuran data yang besar mengakibatkan rumitnya penanganan dan pemanfaatannya. Kesalahan juga sulit dideteksi dan dikoreksi dalam basis data yang besar (Ahas et al., 2007; 2011).\r\n4. MPD memiliki keakuratan spasial yang cukup rendah (Ahas et al., 2010). Penentuan posisi dan kualitas data MPD dapat sangat berbeda karena perbedaan perangkat keras dan perangkat lunak yang digunakan dalam jaringan seluler. Sebagai contoh, penggunaan BTS dalam memperoleh titik lokasi telepon genggam bertipe radius sehingga penduduk yang tinggal di perbatasan sangat mungkin terekam di wilayah tetangga (bukan di wilayah sebenarnya).\r\n5. Informasi mengenai karakteristik subscriber tidak dapat diperoleh jika hanya menggunakan MPD tanpa melakukan survei (Ahas et al., 2009)."
+  },
+  {
+    "user_input": "Apa alasan dari pemilihan alternatif sumber data dalam Survei Digital Wisatawan Nusantara?",
+    "ground_truth": "Beberapa alasan pemilihan alternatif sumber data, yaitu: \r\n1. Jumlah kebutuhan indikator statistik yang semakin bertambah berimbas pada jumlah survei yang semakin beragam\r\n2. Tingkat respons responden survei yang terus menurun, diikuti peningkatan penolakan survei oleh responden\r\n3. Beban kerja serta tanggung jawab petugas survei dan pegawai yang semakin tinggi"
+  },
+  {
+    "user_input": "Sebutkan langkah-langkah dalam proses akuisisi data MPD!",
+    "ground_truth": "Secara umum, tahapan awal proses akuisisi data adalah sebagai berikut: Ekstraksi Log Data Transaksi, Ekstraksi Lokasi Antena / BTS, Ekstraksi Wilayah Administratif, Hashing Nomor Pelanggan Operator Seluler, dan Menyusunan Struktur Data."
+  },
+  {
+    "user_input": "Apa yang dimaksud dengan Usual Environment dalam analisis data MPD?",
+    "ground_truth": "Usual Environment adalah wilayah atau area lokasi lingkungan keseharian pengguna seluler, yang terdiri dari wilayah rumah, lokasi bekerja, serta rumah kedua pengguna seluler."
+  },
+  {
+    "user_input": "Sebutkan apa saja dimensi kualitas statistik yang dijelaskan dalam penjaminan kualitas statistik!",
+    "ground_truth": "Beberapa dimensi kualitas statistik adalah Relevance, Accuracy, Punctuality and Timeliness, Interpretability, Accessibility, Coherence, Comparability, dan Trustworthiness."
+  },
+  {
+    "user_input": "Mengapa BPS melakukan survei wisatawan nusantara menggunakan MPD alih-alih menggunakan metode survei konvensional?",
+    "ground_truth": "BPS melakukan survei wisatawan nusantara menggunakan MPD alih-alih dengan survei konvensional karena MPD dapat memproduksi output statistik secara lebih tepat waktu dibandingkan dengan survei konvensional. Selain itu, MPD juga memiliki jaminan akurasi yang baik karena menggambarkan kondisi pergerakan yang sebenarnya dari subjek amatan. Di sisi lain, pemanfaatan MPD menunjukkan bahwa BPS selaku national statistical office (NSO) telah berinovasi dengan memanfaatkan sumber data alternatif yang modern sehingga meningkatkan reputasi BPS sebagai lembaga statistik yang adaptif terhadap perkembangan teknologi."
+  },
+  {
+    "user_input": "Jelaskan metode yang digunakan pada survei digital wisatawan nusantara!",
+    "ground_truth": "Survei Digital Wisatawan Nusantara 2025 dilaksanakan dengan metode quota sampling, yakni memberikan sejumlah kuota/target sampel pada setiap provinsi."
+  },
+  {
+    "user_input": "Apakah survei digital wisatawan nusantara menggunakan referensi survei lain untuk proses penghitungannya?",
+    "ground_truth": "Ya, survei digital wisatawan nusantara menggunakan referensi survei Survei Wisatawan Nusantara Konvensional 2019 untuk proses penghitungan penimbang yang melakukan perbandingan distribusi sampel Survei Wisatawan Nusantara Konvensional 2019 dengan Survei Digital Wisatawan Nusantara."
+  },
+  {
+    "user_input": "Apa variabel bantu yang digunakan dalam perbandingan distribusi sampel antara Survei Wisatawan Nusantara Konvensional 2019 dan Survei Digital Wisatawan Nusantara 2025?",
+    "ground_truth": "Variabel bantu yang digunakan dalam perbandingan adalah karakteristik demografi, yaitu jenis kelamin, umur, tingkat pendidikan dan kegiatan utama (status pekerjaan)."
+  },
+  {
+    "user_input": "Bagaimana metode penghitungan perjalanan wisatawan nusantara?",
+    "ground_truth": "Data perjalanan wisatawan nusantara yang dikumpulkan dengan pendekatan MPD selanjutnya dilakukan estimasi total perjalanan wisatawan nusantara untuk tahun 2021. Penghitungan estimasi total perjalanan menggunakan penimbang rasio anggota rumah tangga yang melakukan perjalanan terhadap jumlah simcard aktif provider MNO yang ditentukan dari anggota rumah tangga yang melakukan perjalanan di setiap kabupaten asal responden, dikalikan dengan banyaknya perjalanan wisatawan nusantara yang terekam oleh provider MNO. Penimbang ini pun telah memperhitungkan anggota rumah tangga yang menggunakan simcard provider lainnya serta anggota rumah tangga yang tidak menggunakan handphone. Sumber data penimbang perjalanan wisatawan nusantara 2021 adalah data hasil Survei Sosial Ekonomi Nasional (SUSENAS) Tahun periode Maret 2021."
   }
 ]
