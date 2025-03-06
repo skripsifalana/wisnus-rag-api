@@ -22,8 +22,6 @@ class VectorStoreInitializer:
 
         # Initialize embeddings
         embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=self.gemini_api_key)
-        # embeddings = VertexAIEmbeddings(credentials=self.google_application_credentials, model_name="text-embedding-004", max_retries=16)
-        # embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
         # Connect to MongoDB
         client = MongoClient(self.mongodb_uri)
         collection = client[self.mongodb_db_name][self.mongodb_collection_name]
