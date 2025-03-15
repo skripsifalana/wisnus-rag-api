@@ -13,7 +13,7 @@ processor = MarkdownProcessor()
 rag_chain = None
 rag_vector_store = None
 llm_holder = None
-is_streaming = True
+is_streaming = False
 
 @router.post("/initialize")
 async def initialize_rag():
@@ -35,26 +35,6 @@ async def initialize_rag():
         return {"message": "RAG system initialized"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Initialization failed: {str(e)}")
-
-
-# @router.post("/ask")
-# async def ask_question(request: QuestionRequest):
-#     if not rag_chain:
-#         raise HTTPException(status_code=400, detail="RAG not initialized")
-#     try:
-#         result = await rag_chain.ainvoke({"question": request.question})
-#         # for message, metadata in rag_chain.astream(
-#         #     {"question": request.question},
-#         #     stream_mode="messages",
-#         # ):
-#         #     if metadata["langgraph_node"] == "generate":
-#         #         # print(message.content, end="|")
-#         #         return message.content
-#         return result
-#     except Exception as e:
-#         raise HTTPException(
-#             status_code=500, detail=f"Processing failed: {str(e)}"
-#         )
 
 @router.post("/ask")
 async def ask_question(request: QuestionRequest):

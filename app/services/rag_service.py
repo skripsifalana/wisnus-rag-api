@@ -2,8 +2,8 @@
 
 import json
 import os
-import hashlib 
-from pymongo import MongoClient  
+import hashlib
+from pymongo import MongoClient
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 from langgraph.graph import START, StateGraph
@@ -25,6 +25,7 @@ import asyncio
 
 # Kelas pembungkus untuk menyimpan instance LLM agar bisa diperbarui saat rotasi
 
+
 class LLMHolder:
     def __init__(self, llm):
         self.llm = llm
@@ -41,8 +42,9 @@ Anda adalah asisten yang hanya boleh menjawab pertanyaan berdasarkan potongan ko
 5. Jangan menyampaikan permintaan maaf jika pertanyaan sudah terjawab dengan konteks.
 6. Jika jawaban terdiri dari lebih dari satu kalimat, pastikan kalimat-kalimat tersebut saling berkaitan.
 7. Hindari memberikan informasi terkait kode atau referensi yang tidak dapat diketahui oleh pengguna.
-8. Jika Anda dapat memberikan jawaban sesuai konteks yang tersedia, berikan teks "(Sumber: Badan Pusat Statistik)." pada akhir jawaban.
-9. Akhiri setiap jawaban dengan "Terima kasih sudah bertanya!" tanpa membuat baris baru.
+8. Jika konteks yang diberikan tidak menjelaskan pertanyaan secara spesifik, saya izinkan Anda memberikan jawaban menggunakan pengetahuan umum yang Anda miliki dan beri teks "(Sumber: Pengetahuan umum)." tetapi pastikan Anda tidak menjelaskan bahwa konteks yang dimiliki tidak menjawab pertanyaan secara spesifik.
+9. Jika Anda dapat memberikan jawaban sesuai konteks yang tersedia, berikan teks "(Sumber: Badan Pusat Statistik)." pada akhir jawaban.
+10. Akhiri setiap jawaban dengan "Terima kasih sudah bertanya!" tanpa membuat baris baru.
 
 Pengetahuan yang Anda miliki: {context}
 
@@ -73,6 +75,8 @@ async def safe_llm_invoke(llm_holder: LLMHolder, messages):
     raise Exception("All Gemini API keys exhausted due to rate limits.")
 
 # Fungsi helper untuk memanggil LLM secara streaming dengan rotasi API key bila terjadi error 429
+
+
 async def safe_llm_invoke_stream(llm_holder: LLMHolder, messages):
     attempts = 0
     max_attempts = len(gemini_keys)
@@ -90,16 +94,19 @@ async def safe_llm_invoke_stream(llm_holder: LLMHolder, messages):
                 raise e
     raise Exception("All Gemini API keys exhausted due to rate limits.")
 
+
 class RetrievedDocument(TypedDict):
     document: Document
     similarity_score: float
 
 # Definisikan state untuk alur RAG dengan konteks berupa list RetrievedDocument
 
+
 class State(TypedDict):
     question: str
     context: List[RetrievedDocument]
     answer: str
+
 
 class Search(BaseModel):
     queries: List[str] = Field(
@@ -107,6 +114,7 @@ class Search(BaseModel):
         min_items=4,
         max_items=4
     )
+
 
 async def multi_query_retrieval_chain(
     state: State,
@@ -116,7 +124,7 @@ async def multi_query_retrieval_chain(
     similarity_threshold: float = 0.8,
     fetch_k: int = 20,
     lambda_mult: float = 0.5
-):  
+):
     system_prompt = """
     Anda adalah ahli pembuatan kueri penelusuran untuk mengekstrak informasi relevan dari basis data vektor. Berdasarkan pertanyaan pengguna, buat EMPAT kueri berbeda dengan langkah berikut:
     1. Ekstrak kata kunci utama dari pertanyaan.
@@ -163,19 +171,20 @@ async def multi_query_retrieval_chain(
             fetch_k=fetch_k,
             lambda_mult=lambda_mult
         )
-         # Modifikasi: Hapus embedding dari metadata
+        # Modifikasi: Hapus embedding dari metadata
         processed_docs = []
         for doc in results:
             # Salin metadata tanpa atribut embedding
-            filtered_metadata = {k: v for k, v in doc.metadata.items() if k != 'embedding'}
-            
+            filtered_metadata = {k: v for k,
+                                 v in doc.metadata.items() if k != 'embedding'}
+
             # Buat dokumen baru dengan metadata yang sudah difilter
             processed_doc = Document(
                 page_content=doc.page_content,
                 metadata=filtered_metadata
             )
             processed_docs.append(processed_doc)
-        
+
         return [{"document": doc, "similarity_score": 0.0} for doc in processed_docs]
 
     tasks = [fetch_results(query) for query in response.queries]
@@ -217,6 +226,7 @@ Pastikan output JSON valid.
 
 # Definisikan model Pydantic untuk output terstruktur
 
+
 class RerankDocument(BaseModel):
     """Representasi dokumen yang direrank dengan skor similaritas."""
     document: str = Field(
@@ -251,8 +261,8 @@ async def rerank_node(state: State, llm_holder: LLMHolder):
     )
 
     similarity_threshold = 0.7
-    
-     # Siapkan prompt untuk reranking
+
+    # Siapkan prompt untuk reranking
     system_prompt = """
     Anda adalah asisten yang ahli dalam mengevaluasi relevansi dokumen berdasarkan pertanyaan pengguna.
     Tolong lakukan hal berikut:
@@ -270,13 +280,13 @@ async def rerank_node(state: State, llm_holder: LLMHolder):
     {documents}
     """
 
-     # Gunakan LLM dengan output terstruktur
+    # Gunakan LLM dengan output terstruktur
     llm_with_tools = llm_holder.llm.with_structured_output(
         RerankResult,
         include_raw=False  # Hanya kembalikan output terstruktur
     )
 
-       # Buat prompt template
+    # Buat prompt template
     prompt = ChatPromptTemplate.from_messages([
         ("system", system_prompt),
         ("human", user_prompt)
@@ -320,19 +330,6 @@ async def rerank_node(state: State, llm_holder: LLMHolder):
     state["context"] = new_context
     return state
 
-# async def generate(state: State, llm_holder: LLMHolder):
-#     """
-#     Versi non-streaming: Menghasilkan jawaban final setelah seluruh konten dokumen digabungkan.
-#     """
-#     # Menggabungkan isi dokumen dan menambahkan skor similarity untuk setiap dokumen
-#     docs_content = "\n\n".join(
-#         f"Dokumen {i+1}: {doc_entry['document'].page_content} (Similarity: {doc_entry['similarity_score']:.4f})"
-#         for i, doc_entry in enumerate(state["context"])
-#     )
-#     messages = prompt_template.invoke(
-#         {"question": state["question"], "context": docs_content})
-#     response = await safe_llm_invoke(llm_holder, messages)
-#     return {"answer": response.content}
 
 async def generate(state: State, llm_holder: LLMHolder):
     # Menggabungkan isi dokumen dan menambahkan skor similarity untuk setiap dokumen
@@ -345,6 +342,7 @@ async def generate(state: State, llm_holder: LLMHolder):
     response = await safe_llm_invoke(llm_holder, messages)
     return {"answer": response.content}
 
+
 async def generate_stream(state: State, llm_holder: LLMHolder):
     """
     Versi streaming: Menghasilkan jawaban final dengan mengalirkan token satu per satu.
@@ -356,23 +354,10 @@ async def generate_stream(state: State, llm_holder: LLMHolder):
     messages = prompt_template.invoke(
         {"question": state["question"], "context": docs_content}
     )
-    
+
     async for chunk in llm_holder.llm.astream(messages):
         yield {"answer": chunk.content}  # Mengalirkan setiap token
 
-# async def generate_stream(state: State, llm_holder: LLMHolder):
-#     """
-#     Versi streaming: Menghasilkan token-token jawaban secara bertahap.
-#     Frontend dapat memproses token-token ini untuk ditampilkan secara real-time.
-#     """
-#     docs_content = "\n\n".join(
-#         f"Dokumen {i+1}: {doc_entry['document'].page_content} (Similarity: {doc_entry['similarity_score']:.4f})"
-#         for i, doc_entry in enumerate(state["context"])
-#     )
-#     messages = prompt_template.invoke({"question": state["question"], "context": docs_content})
-#     # Streaming token-token dari LLM
-#     async for token in safe_llm_invoke_stream(llm_holder, messages):
-#         yield {"token": token}
 
 def create_rag_chain(vector_store, llm_holder: LLMHolder, streaming: bool = False):
     graph_builder = StateGraph(State)
@@ -385,27 +370,19 @@ def create_rag_chain(vector_store, llm_holder: LLMHolder, streaming: bool = Fals
     async def rerank_chain_node(state):
         return await rerank_node(state, llm_holder)
 
-    # Pilih node generate berdasarkan parameter streaming
-    # async def generate_node(state):
-    #     if streaming:
-    #         # Bungkus async generator dalam dict dengan key "stream"
-    #         return {"stream": generate_stream(state, llm_holder)}
-    #     else:
-    #         return await generate(state, llm_holder)
-    
     async def generate_node(state):
         if streaming:
             async for answer in generate_stream(state, llm_holder):
                 yield answer  # Mengalirkan jawaban
         else:
             # return await generate(state, llm_holder)
-             yield await generate(state, llm_holder)
-        
+            yield await generate(state, llm_holder)
+
     graph_builder.add_node("retrieve", retrieve_node)
     graph_builder.add_node("rerank", rerank_chain_node)
     graph_builder.add_node("generate", generate_node)
-  
-     # Atur alur: START -> retrieve -> rerank -> generate
+
+    # Atur alur: START -> retrieve -> rerank -> generate
     graph_builder.add_edge(START, "retrieve")
     graph_builder.add_edge("retrieve", "rerank")
     graph_builder.add_edge("rerank", "generate")
@@ -467,7 +444,6 @@ async def evaluate_rag_system(vector_store, llm_holder: LLMHolder, json_file_pat
             state.update(generated)
             dataset_list.append({
                 "user_input": query,
-                # Akses konten dokumen dari key 'document' karena format retrieval telah berubah
                 "retrieved_contexts": [doc_entry["document"].page_content for doc_entry in state["context"]],
                 "response": state["answer"],
                 "reference": reference
@@ -483,13 +459,15 @@ async def evaluate_rag_system(vector_store, llm_holder: LLMHolder, json_file_pat
     # Proses evaluasi menggunakan dataset_list yang ada
     eval_dataset = EvaluationDataset.from_list(dataset_list)
     evaluator_llm = RotatingLangchainLLMWrapper(llm_holder)
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=os.getenv("GEMINI_API_KEY_1"))
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/embedding-001", google_api_key=os.getenv("GEMINI_API_KEY_1"))
     evaluator_embeddings = LangchainEmbeddingsWrapper(embeddings)
     result = evaluate(
         dataset=eval_dataset,
-        metrics=[LLMContextPrecisionWithoutReference(), LLMContextRecall(), Faithfulness(), ResponseRelevancy(llm=evaluator_llm, embeddings=evaluator_embeddings)],
+        metrics=[LLMContextPrecisionWithoutReference(), LLMContextRecall(), Faithfulness(
+        ), ResponseRelevancy(llm=evaluator_llm, embeddings=evaluator_embeddings)],
         llm=evaluator_llm,
-        run_config=RunConfig(timeout=720,max_retries=15,max_workers=2)
+        run_config=RunConfig(timeout=720, max_retries=15, max_workers=2)
     )
     upload_response = result.upload()
 
