@@ -3,30 +3,35 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 import sys
 
-# Tambahkan direktori root ke sys.path agar bisa import modul
+# Add root directory to sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Import aplikasi utama
+# Import main application
 from app.main import app as app_main
 
-# Buat instance FastAPI baru untuk Vercel
+# Create new FastAPI instance for Vercel
 app = FastAPI()
 
-# Tambahkan middleware CORS
+# Get CORS configuration from environment variable
+# Default to localhost:3000 if not provided
+cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:3000")
+cors_origins = [origin.strip() for origin in cors_origins_str.split(",")]
+
+# Add CORS middleware with specific configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://yourfrontend.com", "http://localhost:3000"],
+    allow_origins=cors_origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization", "X-Requested-With"],
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
-# Root endpoint untuk health check
+# Root endpoint
 @app.get("/")
 async def root():
     return {"message": "API is running"}
 
-# Delegasikan semua route ke aplikasi utama
+# Delegate requests to main application
 @app.middleware("http")
 async def add_process_time_header(request: Request, call_next):
     if request.url.path != "/":
