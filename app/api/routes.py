@@ -66,7 +66,7 @@ async def evaluate_rag_route():
         evaluation_result = await evaluate_rag_system(
             rag_vector_store, 
             llm_holder, 
-            r"E:\Kuliah\Semester 7\Koding\wisnus-rag-api\app\testsets\testsets.json"
+            "app/testsets/testsets.json"
         )
         return evaluation_result
     except Exception as e:
