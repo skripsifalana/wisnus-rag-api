@@ -15,6 +15,20 @@ rag_vector_store = None
 llm_holder = None
 is_streaming = False
 
+@router.get("/health")
+async def health_check():
+    """Health check endpoint untuk Render monitoring"""
+    try:
+        return {
+            "status": "healthy",
+            "message": "Wisnus RAG API is running",
+            "rag_initialized": rag_chain is not None,
+            "vector_store_ready": rag_vector_store is not None,
+            "llm_ready": llm_holder is not None
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Health check failed: {str(e)}")
+
 @router.post("/initialize")
 async def initialize_rag():
     global rag_chain, rag_vector_store, llm_holder
